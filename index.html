@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- You MUST include jQuery 3.4+ before Fomantic -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Fomantic UI is a modern front-end development framework that helps you create beautiful, 
+     responsive layouts using human-friendly HTML. It's a community fork of Semantic UI, 
+     which means it started as a continuation of the original Semantic UI project after it became less actively maintained. 
+    -->
+
+    <!-- Element -->
+    <!-- Elements are the basic building blocks in Fomantic UI. They include components like Buttons, Icons, and Images. -->
+    <!-- E.g button -->
+    <button class="ui button">Button</button>
+    <!-- E.g icon -->
+    <i class="user icon"></i>
+    <!-- E.g image -->
+    <img class="ui small image" src="image.png" alt="Example Image" />
+
+    <!-- Collections -->
+    <!-- Collections are groups of elements that are commonly used together, such as Grid, Form, and Menu. -->
+
+    <!-- E.g Grid -->
+    <div class="ui grid">
+      <div class="four wide column">Four wide column</div>
+      <div class="twelve wide column">Twelve wide column</div>
+    </div>
+    <!-- E.g form -->
+    <form class="ui form">
+      <div class="field">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Name" />
+      </div>
+      <button class="ui button" type="submit">Submit</button>
+    </form>
+    <!-- E.g Menu -->
+    <div class="ui menu">
+      <a class="item">Home</a>
+      <a class="item">About</a>
+      <a class="item">Contact</a>
+    </div>
+
+    <!-- Views -->
+    <!-- Views represent the visual elements of your application. Common Views include Card, Table, and Feed. -->
+
+    <!-- E.g Cards -->
+    <div class="ui card">
+      <div class="image">
+        <img src="image.png" alt="Avatar" />
+      </div>
+      <div class="content">
+        <a class="header">Card Title</a>
+        <div class="description">Card description goes here.</div>
+      </div>
+    </div>
+    <!-- E.g Table -->
+    <table class="ui celled table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>24</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- E.g Feeds -->
+    <div class="ui feed">
+      <div class="event">
+        <div class="label">
+          <img src="image.png" alt="Avatar" />
+        </div>
+        <div class="content">
+          <div class="summary">User posted a new update.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modules -->
+    <!-- Modules are interactive components like Dropdowns, Modals, and Accordions. -->
+
+    <!-- E.g dropdown -->
+    <!-- <div class="ui dropdown">
+      <input type="hidden" name="dropdown" />
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <div class="item" data-value="1">Option 1</div>
+        <div class="item" data-value="2">Option 2</div>
+      </div>
+    </div> -->
+
+    <!-- E.g modal -->
+    <!-- <div class="ui modal">
+      <div class="header">Modal Title</div>
+      <div class="content">Modal content goes here.</div>
+      <div class="actions">
+        <div class="ui button">Close</div>
+      </div>
+    </div> -->
+
+    <!-- E.g Accordion -->
+    <div class="ui accordion">
+      <div class="title"><i class="dropdown icon"></i>Section 1</div>
+      <div class="content">Content for section 1.</div>
+      <div class="title"><i class="dropdown icon"></i>Section 2</div>
+      <div class="content">Content for section 2.</div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      $(".ui.dropdown").dropdown();
+      $(".ui.modal").modal("show");
+      $(".ui.accordion").accordion();
+    </script>
+  </body>
+</html>
